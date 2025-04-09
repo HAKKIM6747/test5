@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('SSO-Login.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: rgb(12, 12, 99);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 92%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .login-btn {
+            background-color: #ff6d00;
+            color: white;
+            padding: 7px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .remember {
+            color: #0f3c82;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            margin: 10px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .remember a {
+            color: #0f3c82;
+            text-decoration: none;
+        }
+
+        .alt-options {
+            font-size: 0.85rem;
+            color: #0f3c82;
+            margin: 1rem 0;
+        }
+
+        .create-btn {
+            background-color: #5cc506;
+            color: white;
+            padding: 7px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 60%;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.75rem;
+            margin-top: 1.5rem;
+            color: #fff;
+            background: #0f3c82;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <div class="login-container">
+        <!-- <img src="logo-placeholder.png" alt="Logo" class="logo" /> -->
+        <div class="title">ចូលគណនីរបស់អ្នក</div>
+
+        <input type="text" placeholder="អ៉ីម៉ែល" />
+        <input type="password" placeholder="ពាក្យសម្ងាត់" />
+
+        <button class="login-btn">ចូលប្រើប្រាស់</button>
+
+        <div class="remember">
+            <label><input type="checkbox" /> ចងចាំខ្ញុំ</label>
+            <a href="#">បានភ្លេចពាក្យសម្ងាត់?</a>
+        </div>
+
+        <div class="alt-options">មិនមានគណនី?</div>
+
+        <button class="create-btn">បង្កើតគណនី</button>
+    </div>
+
+    <div class="footer">
+        © រដ្ឋាភិបាល 2022 • កម្មសិទ្ធិដោយក្រសួងទំនាក់ទំនង • រក្សាសិទ្ធិគ្រប់យ៉ាង
+    </div>
+
 </body>
+
 </html>
